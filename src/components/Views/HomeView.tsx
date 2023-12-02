@@ -1,7 +1,8 @@
 import { useCallback, useEffect, useState } from 'react';
-import { Product } from '../utils/interfaces';
-import ProductsList from './ProductsList';
+import { Product } from '../../utils/interfaces';
+import ProductsList from '../ProductsList';
 import Papa from 'papaparse';
+import Heading from '../Base/Heading';
 
 const HomeView = () => {
   const [products, setProducts] = useState<Array<Product>>([]);
@@ -48,7 +49,14 @@ const HomeView = () => {
     });
   };
   return (
-    <main>
+    <main className="bg-gray-50">
+      <header className="min-h-[160px] flex items-center justify-center bg-gray-200">
+        <Heading
+          className="px-4 py-6"
+          type="H1"
+          content={'Glacier Sightseeing Tours'}
+        />
+      </header>
       <ProductsList products={products} />
     </main>
   );

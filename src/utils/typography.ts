@@ -6,5 +6,6 @@ export const H3 = `text-H3Mobile leading-150 tracking-zero desktop:text-H3 deskt
 export const H4 = `text-H4Mobile leading-150 tracking-zero desktop:text-H4 desktop:leading-150 desktop:tracking-zero ${headingDefaults}`;
 export const H5 = `text-H5Mobile leading-150 tracking-zero desktop:text-H5 desktop:leading-150 desktop:tracking-zero ${headingDefaults}`;
 
+export const bodyLarge = `font-normal text-H5 ${bodyDefaults}`;
 export const body = `font-normal text-body ${bodyDefaults}`;
 export const body2 = `font-bold text-bodySmall ${bodyDefaults}`;
