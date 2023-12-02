@@ -1,17 +1,22 @@
 import { Product } from '../utils/interfaces';
+import Heading from './Base/Heading';
+import Paragraph from './Base/Paragraph';
 interface SingleProduct {
   product: Product;
 }
 const ProductCard = ({ product }: SingleProduct) => {
   return (
     <div className="my-4">
-      <h1>Name: {product.name}</h1>
-      <p>Price: {product.price}</p>
-      <p>Quantity: {product.quantity}</p>
-      <p>Type: {product.type}</p>
-      <p>Failure rate: {product.failure_rate}</p>
-      <p>Parent: {product.parent}</p>
-      <p>Description: {product.description}</p>
+      <Heading type="H3" content={`Name: ${product.name}`} />
+      <Paragraph type="body" content={`Quantity: ${product.quantity}`} />
+      <Paragraph type="body" content={`Type: ${product.type}`} />
+      <Paragraph type="body" content={`Price: ${product.price}`} />
+      <Paragraph
+        type="body"
+        content={`Failure rate: ${product.failure_rate}`}
+      />
+      <Paragraph type="body" content={`Parent: ${product.parent}`} />
+      <Paragraph type="body" content={`Description: ${product.description}`} />
     </div>
   );
 };
