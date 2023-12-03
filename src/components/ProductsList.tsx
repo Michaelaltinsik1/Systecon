@@ -26,7 +26,7 @@ const ProductsList = ({
   }, [currPage, elementsPerPage]);
 
   return (
-    <div className="px-4 py-6">
+    <div className="px-4 py-6 desktop:px-10">
       {isMobile ? (
         productsOnCurrPage.map((product) => (
           <ProductCard key={product.name} product={product} />

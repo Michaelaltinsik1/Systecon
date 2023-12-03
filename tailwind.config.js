@@ -7,6 +7,12 @@ module.exports = {
       'gray-100': '#F5F5F5',
       'gray-200': '#EEEEEE',
       'gray-900': '#212121',
+      'blue-400': '#42a5f5',
+      'blue-500': '#2196f3',
+      'blue-600': '#1e88e5',
+      'red-400': '#ef5350',
+      'red-500': '#f44336',
+      'red-600': '#e53935',
     },
     fontFamily: {
       openSans: ['Open Sans', 'sans-serif'],
